@@ -1,14 +1,14 @@
 // HiveMQ details
 
 const broker =
-"wss://YOUR_CLUSTER_URL:8884/mqtt";
+"wss://1714f1bf966d4d0f8a68ca02d01e59a8.s1.eu.hivemq.cloud:8884/mqtt";
 
 
 const options = {
 
-username:"YOUR_USERNAME",
+username:"harshgaikwad",
 
-password:"YOUR_PASSWORD"
+password:"harshG19"
 
 };
 
