@@ -1,5 +1,3 @@
-// HiveMQ details
-
 const broker =
 "wss://1714f1bf966d4d0f8a68ca02d01e59a8.s1.eu.hivemq.cloud:8884/mqtt";
 
@@ -11,7 +9,6 @@ username:"harshwardhangaikwad",
 password:"hello19G"
 
 };
-
 
 
 const client = mqtt.connect(
@@ -28,16 +25,16 @@ console.log("MQTT Connected");
 
 
 document.getElementById("connection")
-.innerHTML="Connected";
+.innerHTML="Connected ✅";
+
 
 
 client.subscribe(
-"home/relay/status"
+"home/temperature"
 );
 
 
 });
-
 
 
 
@@ -46,15 +43,14 @@ client.on("message",
 (topic,message)=>{
 
 
-let state =
+let temp =
 message.toString();
 
 
 
-document.getElementById("status")
+document.getElementById("temp")
 .innerHTML =
-"Status: "+state;
-
+"Temperature: "+temp+" °C";
 
 
 });
@@ -62,29 +58,14 @@ document.getElementById("status")
 
 
 
-
-function relayON(){
-
-
-client.publish(
-"home/relay",
-"ON"
-);
+client.on("error",(error)=>{
 
 
-}
+console.log(error);
 
 
+document.getElementById("connection")
+.innerHTML="Connection Failed";
 
 
-
-function relayOFF(){
-
-
-client.publish(
-"home/relay",
-"OFF"
-);
-
-
-}
+});
