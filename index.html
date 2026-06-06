@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Smart Relay Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+<h1>⚡ IoT Relay Control</h1>
+
+
+<div id="status">
+Status: OFF
+</div>
+
+
+<button class="on" onclick="relayON()">
+TURN ON
+</button>
+
+
+<button class="off" onclick="relayOFF()">
+TURN OFF
+</button>
+
+
+<p id="connection">
+Connecting...
+</p>
+
+
+</div>
+
+
+<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
