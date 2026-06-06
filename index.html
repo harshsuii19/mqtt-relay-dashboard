@@ -3,7 +3,7 @@
 
 <head>
 
-<title>Smart Relay Dashboard</title>
+<title>Temperature Dashboard</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -15,22 +15,13 @@
 
 <div class="card">
 
-<h1>⚡ IoT Relay Control</h1>
+
+<h1>🌡️ Temperature Monitor</h1>
 
 
-<div id="status">
-Status: OFF
+<div id="temp">
+Temperature: -- °C
 </div>
-
-
-<button class="on" onclick="relayON()">
-TURN ON
-</button>
-
-
-<button class="off" onclick="relayOFF()">
-TURN OFF
-</button>
 
 
 <p id="connection">
@@ -39,6 +30,7 @@ Connecting...
 
 
 </div>
+
 
 
 <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
