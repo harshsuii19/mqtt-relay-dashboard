@@ -14,11 +14,11 @@ font-family:Arial;
 }
 
 
-.card{
+card{
 
 background:#1f2937;
 
-padding:40px;
+padding:45px;
 
 border-radius:25px;
 
@@ -31,51 +31,48 @@ box-shadow:0 0 25px cyan;
 }
 
 
-#status{
+.card{
+
+background:#1f2937;
+
+padding:45px;
+
+border-radius:25px;
+
+text-align:center;
+
+color:white;
+
+box-shadow:0 0 25px cyan;
+
+}
+
+
+
+h1{
 
 font-size:30px;
 
+}
+
+
+
+#temp{
+
+font-size:40px;
+
 margin:30px;
 
-}
-
-
-
-button{
-
-padding:15px 35px;
-
-border:none;
-
-border-radius:30px;
-
-font-size:18px;
-
-margin:10px;
-
-cursor:pointer;
+color:#00ffff;
 
 }
 
-
-.on{
-
-background:#00ff88;
-
-}
-
-
-.off{
-
-background:#ff4444;
-
-}
 
 
 #connection{
 
-margin-top:20px;
+font-size:18px;
 
-color:#00ffff;
+color:#00ff88;
 
 }
